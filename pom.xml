@@ -139,10 +139,13 @@
         <gin.version>r137</gin.version>
 
         <!-- Restlet -->
-        <restlet.version>2.0.1</restlet.version>
+        <restlet.version>2.0.3</restlet.version>
 
         <!-- Objectify -->
         <objectify.version>2.2.2</objectify.version>
+
+        <!-- Gson -->
+        <gson.version>1.6</gson.version>
 
         <!-- Logging -->
         <slf4j.version>1.6.1</slf4j.version>
@@ -383,11 +386,6 @@
             </dependency>
             <dependency>
                 <groupId>org.restlet.gae</groupId>
-                <artifactId>org.restlet.ext.servlet</artifactId>
-                <version>${restlet.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.restlet.gae</groupId>
                 <artifactId>org.restlet.ext.xml</artifactId>
                 <version>${restlet.version}</version>
             </dependency>
@@ -417,16 +415,23 @@
                 <version>${objectify.version}</version>
             </dependency>
 
+            <!-- Gson -->
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>${gson.version}</version>
+            </dependency>
+
             <!-- Logging -->
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
-                <version>1.6.0</version>
+                <version>${slf4j.version}</version>
             </dependency>
             <dependency>
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
-                <version>0.9.22</version>
+                <version>${logback.version}</version>
             </dependency>
 
             <!-- Test -->
