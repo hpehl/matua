@@ -59,33 +59,14 @@
 
 
     <repositories>
-        <!-- My projects -->
         <repository>
             <id>pehl-parent</id>
             <url>http://pehl-parent.googlecode.com/svn/repository</url>
         </repository>
         <repository>
-            <id>piriti</id>
-            <url>http://piriti.googlecode.com/svn/repository</url>
-        </repository>
-        <repository>
-            <id>taoki</id>
-            <url>http://taoki.googlecode.com/svn/repository</url>
-        </repository>
-        <repository>
-            <id>taputapu</id>
-            <url>http://taputapu.googlecode.com/svn/repository</url>
-        </repository>
-        <repository>
-            <id>tire-d8</id>
-            <url>http://tire-d8.googlecode.com/svn/repository</url>
-        </repository>
-        <repository>
             <id>totoe</id>
             <url>http://totoe.googlecode.com/svn/repository</url>
         </repository>
-
-        <!-- 3rd party -->
         <repository>
             <id>gwtp</id>
             <url>http://maven.gwt-platform.googlecode.com/hg/</url>
@@ -138,15 +119,6 @@
         <guice.version>2.0</guice.version>
         <gin.version>r137</gin.version>
 
-        <!-- Restlet -->
-        <restlet.version>2.0.3</restlet.version>
-
-        <!-- Objectify -->
-        <objectify.version>2.2.2</objectify.version>
-
-        <!-- Gson -->
-        <gson.version>1.6</gson.version>
-
         <!-- Logging -->
         <slf4j.version>1.6.1</slf4j.version>
         <logback.version>0.9.22</logback.version>
@@ -156,6 +128,11 @@
         <easymock.version>3.0</easymock.version>
 
         <!-- Misc -->
+        <gson.version>1.6</gson.version>
+        <guava.version>r07</guava.version>
+        <objectify.version>2.2.2</objectify.version>
+        <restlet.version>2.0.3</restlet.version>
+
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -408,11 +385,11 @@
                 <scope>provided</scope>
             </dependency>
 
-            <!-- Objectify -->
+            <!-- Guava -->
             <dependency>
-                <groupId>com.googlecode.objectify</groupId>
-                <artifactId>objectify</artifactId>
-                <version>${objectify.version}</version>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
             </dependency>
 
             <!-- Gson -->
@@ -420,6 +397,13 @@
                 <groupId>com.google.code.gson</groupId>
                 <artifactId>gson</artifactId>
                 <version>${gson.version}</version>
+            </dependency>
+
+            <!-- Objectify -->
+            <dependency>
+                <groupId>com.googlecode.objectify</groupId>
+                <artifactId>objectify</artifactId>
+                <version>${objectify.version}</version>
             </dependency>
 
             <!-- Logging -->
@@ -509,6 +493,11 @@
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-release-plugin</artifactId>
+                    <version>2.1</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-resources-plugin</artifactId>
                     <version>2.4.3</version>
                 </plugin>
@@ -521,6 +510,16 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-report-plugin</artifactId>
                     <version>2.6</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>2.1.1</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>build-helper-maven-plugin</artifactId>
+                    <version>1.5</version>
                 </plugin>
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
@@ -567,6 +566,16 @@ encoding/<project>=${project.build.sourceEncoding}
                            ]]></content>
                        </file>
                     </additionalConfig>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>gwt-maven-plugin</artifactId>
+                <version>${gwt.version}</version>
+                <configuration>
+                    <logLevel>INFO</logLevel>
+                    <extraJvmArgs>-Xmx512m</extraJvmArgs>
+                    <gwtVersion>${gwt.version}</gwtVersion>
                 </configuration>
             </plugin>
         </plugins>
