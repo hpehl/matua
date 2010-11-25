@@ -93,7 +93,6 @@
 
 
     <properties>
-        <!-- Taoki & Totoe -->
         <piriti.version>0.6.2</piriti.version>
         <taoki.version>0.3.0</taoki.version>
         <taputapu.version>0.1.0</taputapu.version>
