@@ -118,7 +118,7 @@
 
     <properties>
         <!-- Taoki & Totoe -->
-        <piriti.version>0.3.0</piriti.version>
+        <piriti.version>0.6.2</piriti.version>
         <taoki.version>0.3.0</taoki.version>
         <taputapu.version>0.1.0</taputapu.version>
         <tire.version>0.1.0</tire.version>
@@ -136,7 +136,7 @@
 
         <!-- DI -->
         <guice.version>2.0</guice.version>
-        <gin-version>r137</gin-version>
+        <gin.version>r137</gin.version>
 
         <!-- Restlet -->
         <restlet.version>2.0.1</restlet.version>
@@ -312,6 +312,7 @@
                 <groupId>com.google.gwt</groupId>
                 <artifactId>gwt-servlet</artifactId>
                 <version>${gwt.version}</version>
+                <scope>runtime</scope>
             </dependency>
             <dependency>
                 <groupId>com.google.gwt</groupId>
@@ -372,6 +373,11 @@
             <dependency>
                 <groupId>org.restlet.gae</groupId>
                 <artifactId>org.restlet.ext.json</artifactId>
+                <version>${restlet.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.restlet.gae</groupId>
+                <artifactId>org.restlet.ext.xml</artifactId>
                 <version>${restlet.version}</version>
             </dependency>
             <dependency>
