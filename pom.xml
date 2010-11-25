@@ -80,7 +80,6 @@
             <url>http://maven.restlet.org</url>
         </repository>
     </repositories>
-
     <pluginRepositories>
         <pluginRepository>
             <id>gae-plugin</id>
