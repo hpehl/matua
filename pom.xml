@@ -127,7 +127,7 @@
         <gson.version>1.6</gson.version>
         <guava.version>r07</guava.version>
         <objectify.version>2.2.2</objectify.version>
-        <restlet.version>2.0.3</restlet.version>
+        <restlet.version>2.1-M1</restlet.version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
