@@ -197,6 +197,13 @@
             </dependency>
             <dependency>
                 <groupId>name.pehl.tire</groupId>
+                <artifactId>tire-model</artifactId>
+                <version>${tire.version}</version>
+                <classifier>gwt</classifier>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>name.pehl.tire</groupId>
                 <artifactId>tire-rest</artifactId>
                 <version>${tire.version}</version>
             </dependency>
