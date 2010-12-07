@@ -64,6 +64,26 @@
             <url>http://pehl-parent.googlecode.com/svn/repository</url>
         </repository>
         <repository>
+            <id>piriti</id>
+            <url>http://piriti.googlecode.com/svn/repository</url>
+        </repository>
+        <repository>
+            <id>taoki</id>
+            <url>http://taoki.googlecode.com/svn/repository</url>
+        </repository>
+        <repository>
+            <id>taputapu</id>
+            <url>http://taputapu.googlecode.com/svn/repository</url>
+        </repository>
+        <repository>
+            <id>tire-d8</id>
+            <url>http://tire-d8.googlecode.com/svn/repository</url>
+        </repository>
+        <repository>
+            <id>totoe</id>
+            <url>http://totoe.googlecode.com/svn/repository</url>
+        </repository>
+        <repository>
             <id>gwtp</id>
             <url>http://maven.gwt-platform.googlecode.com/hg/</url>
         </repository>
