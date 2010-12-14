@@ -211,12 +211,18 @@
             <!-- TiRe -->
             <dependency>
                 <groupId>name.pehl.tire</groupId>
-                <artifactId>tire-dao</artifactId>
+                <artifactId>tire-model</artifactId>
                 <version>${tire.version}</version>
             </dependency>
             <dependency>
                 <groupId>name.pehl.tire</groupId>
                 <artifactId>tire-model</artifactId>
+                <classifier>enums</classifier>
+                <version>${tire.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>name.pehl.tire</groupId>
+                <artifactId>tire-dao</artifactId>
                 <version>${tire.version}</version>
             </dependency>
             <dependency>
