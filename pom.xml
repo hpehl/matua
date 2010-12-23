@@ -359,6 +359,12 @@
                 <version>${gxt.version}</version>
                 <scope>provided</scope>
             </dependency>
+            <dependency>
+                <groupId>com.gwtincubator.widgets</groupId>
+                <artifactId>gwt-incubator-timepicker</artifactId>
+                <version>1.0.1</version>
+                <scope>provided</scope>
+            </dependency>
             
             <!-- DI -->
             <dependency>
