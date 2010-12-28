@@ -617,7 +617,7 @@ encoding/<project>=${project.build.sourceEncoding}
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>gwt-maven-plugin</artifactId>
-                <version>${gwt.version}</version>
+                <version>${gwt.plugin.version}</version>
                 <configuration>
                     <logLevel>INFO</logLevel>
                     <extraJvmArgs>-Xmx512m</extraJvmArgs>
