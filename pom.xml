@@ -130,6 +130,7 @@
         <gae-test.version>1.4.0</gae-test.version>
         <datanucleus.version>1.1.5</datanucleus.version>
         <gwt.version>2.1.1</gwt.version>
+        <gwt.plugin.version>2.1.0</gwt.plugin.version>
         
         <!-- GWT Frameworks -->
         <gwtp.version>0.5-SNAPSHOT</gwtp.version>
@@ -569,7 +570,7 @@
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>gwt-maven-plugin</artifactId>
-                    <version>${gwt.version}</version>
+                    <version>${gwt.plugin.version}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
