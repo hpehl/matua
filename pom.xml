@@ -119,11 +119,11 @@
     <properties>
         <!-- My projects -->
         <kaitiro.version>0.1.0</kaitiro.version>
-        <piriti.version>0.6.3</piriti.version>
+        <piriti.version>0.6.4</piriti.version>
         <taoki.version>0.3.0</taoki.version>
         <taputapu.version>0.1.0</taputapu.version>
         <tire.version>0.1.0</tire.version>
-        <totoe.version>0.2.1</totoe.version>
+        <totoe.version>0.2.2</totoe.version>
 
         <!-- GAE / GWT -->
         <gae.version>1.4.0</gae.version>
@@ -133,12 +133,12 @@
         <gwt.plugin.version>2.1.0</gwt.plugin.version>
         
         <!-- GWT Frameworks -->
-        <gwtp.version>0.5-SNAPSHOT</gwtp.version>
+        <gwtp.version>0.5</gwtp.version>
         <gxt.version>2.1.1</gxt.version>
 
         <!-- DI -->
         <guice.version>3.0-rc2</guice.version>
-        <gin.version>r137</gin.version>
+        <gin.version>1.0-r137</gin.version>
 
         <!-- Logging -->
         <slf4j.version>1.6.1</slf4j.version>
@@ -152,7 +152,7 @@
         <gson.version>1.6</gson.version>
         <guava.version>r07</guava.version>
         <objectify.version>2.2.3</objectify.version>
-        <restlet.version>2.1-M1</restlet.version>
+        <restlet.version>2.1-M2</restlet.version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
@@ -241,6 +241,12 @@
             <dependency>
                 <groupId>name.pehl</groupId>
                 <artifactId>totoe</artifactId>
+                <version>${totoe.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>name.pehl</groupId>
+                <artifactId>totoe-tester</artifactId>
                 <version>${totoe.version}</version>
                 <scope>provided</scope>
             </dependency>
@@ -350,9 +356,39 @@
             <!-- GWT Frameworks -->
             <dependency>
                 <groupId>com.gwtplatform</groupId>
-                <artifactId>gwtp</artifactId>
+                <artifactId>gwtp-clients-common</artifactId>
                 <version>${gwtp.version}</version>
                 <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.gwtplatform</groupId>
+                <artifactId>gwtp-mvp-client</artifactId>
+                <version>${gwtp.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.gwtplatform</groupId>
+                <artifactId>gwtp-dispatch-client</artifactId>
+                <version>${gwtp.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.gwtplatform</groupId>
+                <artifactId>gwtp-processors</artifactId>
+                <version>${gwtp.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.gwtplatform</groupId>
+                <artifactId>gwtp-crawler</artifactId>
+                <version>${gwtp.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.gwtplatform</groupId>
+                <artifactId>gwtp-tester</artifactId>
+                <version>${gwtp.version}</version>
+                <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>com.extjs</groupId>
@@ -433,7 +469,7 @@
             <dependency>
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
-            <classifier>gwt</classifier>
+                <classifier>gwt</classifier>
                 <version>${guava.version}</version>
                 <scope>provided</scope>
             </dependency>
