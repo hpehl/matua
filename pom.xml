@@ -654,6 +654,18 @@ encoding/<project>=${project.build.sourceEncoding}
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>gwt-maven-plugin</artifactId>
                 <version>${gwt.plugin.version}</version>
+                <!-- 
+                    Without the gwt-dev dependency tests fail with 
+                    java.lang.ClassNotFoundException: com.google.gwt.dev.javac.typemodel.TypeOracle 
+                    since GWT 2.2.0 / GWT Plugin 2.1.0-1
+                -->
+                <dependencies>
+                    <dependency>
+                        <groupId>com.google.gwt</groupId>
+                        <artifactId>gwt-dev</artifactId>
+                        <version>${gwt.version}</version>
+                    </dependency>
+                </dependencies>
                 <configuration>
                     <logLevel>INFO</logLevel>
                     <extraJvmArgs>-Xmx512m</extraJvmArgs>
