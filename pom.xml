@@ -126,8 +126,8 @@
         <totoe.version>0.2.2</totoe.version>
 
         <!-- GAE / GWT -->
-        <gae.version>1.4.0</gae.version>
-        <gae-test.version>1.4.0</gae-test.version>
+        <gae.version>1.4.2</gae.version>
+        <gae-test.version>1.4.2</gae-test.version>
         <datanucleus.version>1.1.5</datanucleus.version>
         <gwt.version>2.2.0</gwt.version>
         <gwt.plugin.version>2.1.0-1</gwt.plugin.version>
