@@ -106,6 +106,10 @@
     </repositories>
     <pluginRepositories>
         <pluginRepository>
+            <id>gwtplatform.plugin</id>
+            <url>http://maven.gwt-platform.googlecode.com/hg/</url>
+        </pluginRepository>
+        <pluginRepository>
             <id>gae-plugin</id>
             <url>http://maven-gae-plugin.googlecode.com/svn/repository</url>
         </pluginRepository>
@@ -130,7 +134,7 @@
         <gae-test.version>1.4.2</gae-test.version>
         <datanucleus.version>1.1.5</datanucleus.version>
         <gwt.version>2.2.0</gwt.version>
-        <gwt.plugin.version>2.1.0-1</gwt.plugin.version>
+        <gwt.plugin.version>2.2.0</gwt.plugin.version>
         
         <!-- GWT Frameworks -->
         <gwtp.version>0.5</gwtp.version>
