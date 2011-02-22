@@ -142,7 +142,7 @@
 
         <!-- DI -->
         <guice.version>3.0-rc2</guice.version>
-        <gin.version>1.1-r169</gin.version>
+        <gin.version>1.5-post-gwt-2.2</gin.version>
 
         <!-- Logging -->
         <slf4j.version>1.6.1</slf4j.version>
@@ -411,6 +411,16 @@
                 <groupId>com.google.inject.extensions</groupId>
                 <artifactId>guice-servlet</artifactId>
                 <version>${guice.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.inject.extensions</groupId>
+                <artifactId>guice-assistedinject</artifactId>
+                <version>${guice.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.inject</groupId>
+                <artifactId>javax.inject</artifactId>
+                <version>1</version>
             </dependency>
             <dependency>
                 <groupId>aopalliance</groupId>
