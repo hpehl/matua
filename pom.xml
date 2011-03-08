@@ -106,10 +106,6 @@
     </repositories>
     <pluginRepositories>
         <pluginRepository>
-            <id>gwtplatform.plugin</id>
-            <url>http://maven.gwt-platform.googlecode.com/hg/</url>
-        </pluginRepository>
-        <pluginRepository>
             <id>gae-plugin</id>
             <url>http://maven-gae-plugin.googlecode.com/svn/repository</url>
         </pluginRepository>
