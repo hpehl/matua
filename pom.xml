@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>name.pehl</groupId>
     <artifactId>superpom</artifactId>
-    <version>2</version>
+    <version>3</version>
     <packaging>pom</packaging>
     <name>SuperPom</name>
     <description>Common super POM for all my projects</description>
@@ -137,7 +137,7 @@
         <gxt.version>2.2.3</gxt.version>
 
         <!-- DI -->
-        <guice.version>3.0-rc3</guice.version>
+        <guice.version>3.0</guice.version>
         <gin.version>1.5.0</gin.version>
 
         <!-- Logging -->
@@ -145,13 +145,14 @@
         <logback.version>0.9.22</logback.version>
 
         <!-- Test -->
-        <junit.version>4.8.1</junit.version>
+        <junit.version>4.8.2</junit.version>
         <mockito.version>1.8.5</mockito.version>
 
         <!-- Misc -->
         <gson.version>1.6</gson.version>
         <guava.version>r08</guava.version>
-        <objectify.version>2.2.3</objectify.version>
+        <objectify.version>3.0b1</objectify.version>
+        <objectify.query.version>0.1</objectify.query.version>
         <restlet.version>2.1-M2</restlet.version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -497,6 +498,11 @@
                 <groupId>com.googlecode.objectify</groupId>
                 <artifactId>objectify</artifactId>
                 <version>${objectify.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.googlecode.objectify.query</groupId>
+                <artifactId>objectify-query</artifactId>
+                <version>${objectify.query.version}</version>
             </dependency>
 
             <!-- Logging -->
