@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>name.pehl</groupId>
     <artifactId>superpom</artifactId>
-    <version>4</version>
+    <version>5</version>
     <packaging>pom</packaging>
     <name>SuperPom</name>
     <description>Common super POM for all my projects</description>
@@ -123,7 +123,7 @@
         <taoki.version>0.3.0</taoki.version>
         <taputapu.version>0.1.0</taputapu.version>
         <tire.version>0.1.0</tire.version>
-        <totoe.version>0.2.2</totoe.version>
+        <totoe.version>0.2.3</totoe.version>
 
         <!-- GAE / GWT -->
         <gae.version>1.4.3</gae.version>
@@ -150,10 +150,10 @@
 
         <!-- Misc -->
         <gson.version>1.6</gson.version>
-        <guava.version>r08</guava.version>
-        <objectify.version>3.0b1</objectify.version>
+        <guava.version>r09</guava.version>
+        <objectify.version>3.0b2</objectify.version>
         <objectify.query.version>0.1</objectify.query.version>
-        <restlet.version>2.1-M2</restlet.version>
+        <restlet.version>2.1-M3</restlet.version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
