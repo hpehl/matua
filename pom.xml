@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>name.pehl</groupId>
     <artifactId>superpom</artifactId>
-    <version>5</version>
+    <version>6</version>
     <packaging>pom</packaging>
     <name>SuperPom</name>
     <description>Common super POM for all my projects</description>
@@ -154,6 +154,7 @@
         <objectify.version>3.0b2</objectify.version>
         <objectify.query.version>0.1</objectify.query.version>
         <restlet.version>2.1-M3</restlet.version>
+        <commons.lang>3.0-beta</commons.lang>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
@@ -430,6 +431,13 @@
                 <artifactId>gin</artifactId>
                 <version>${gin.version}</version>
                 <scope>provided</scope>
+            </dependency>
+            
+            <!-- Commons -->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons.lang}</version>
             </dependency>
 
             <!-- Restlet -->
