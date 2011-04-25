@@ -103,6 +103,10 @@
             <id>restlet</id>
             <url>http://maven.restlet.org</url>
         </repository>
+        <repository>
+            <id>commons-lang</id>
+            <url>http://repository.apache.org/snapshots</url>
+        </repository>
     </repositories>
     <pluginRepositories>
         <pluginRepository>
@@ -154,7 +158,7 @@
         <objectify.version>3.0b2</objectify.version>
         <objectify.query.version>0.1</objectify.query.version>
         <restlet.version>2.1-M3</restlet.version>
-        <commons.lang>3.0-beta</commons.lang>
+        <commons.lang>3.0-SNAPSHOT</commons.lang>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
