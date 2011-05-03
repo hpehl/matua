@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>name.pehl</groupId>
     <artifactId>superpom</artifactId>
-    <version>6</version>
+    <version>7</version>
     <packaging>pom</packaging>
     <name>SuperPom</name>
     <description>Common super POM for all my projects</description>
@@ -123,7 +123,7 @@
     <properties>
         <!-- My projects -->
         <kaitiro.version>0.1.0</kaitiro.version>
-        <piriti.version>0.7.0</piriti.version>
+        <piriti.version>0.7.0b1</piriti.version>
         <taoki.version>0.3.0</taoki.version>
         <taputapu.version>0.1.0</taputapu.version>
         <tire.version>0.1.0</tire.version>
