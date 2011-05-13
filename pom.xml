@@ -154,7 +154,7 @@
         <!-- Misc -->
         <gson.version>1.6</gson.version>
         <guava.version>r09</guava.version>
-        <objectify.version>3.0b2</objectify.version>
+        <objectify.version>3.0</objectify.version>
         <objectify.query.version>0.1</objectify.query.version>
         <restlet.version>2.1-M3</restlet.version>
         <commons.lang>3.0-SNAPSHOT</commons.lang>
@@ -353,6 +353,12 @@
             </dependency>
 
             <!-- GWT Frameworks -->
+            <dependency>
+                <groupId>com.gwtplatform</groupId>
+                <artifactId>gwtp</artifactId>
+                <version>${gwtp.version}</version>
+                <scope>provided</scope>
+            </dependency>
             <dependency>
                 <groupId>com.gwtplatform</groupId>
                 <artifactId>gwtp-clients-common</artifactId>
