@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>name.pehl</groupId>
     <artifactId>superpom</artifactId>
-    <version>8</version>
+    <version>9</version>
     <packaging>pom</packaging>
     <name>SuperPom</name>
     <description>Common super POM for all my projects</description>
@@ -130,9 +130,8 @@
         <totoe.version>0.2.3</totoe.version>
 
         <!-- GAE / GWT -->
-        <gae.version>1.4.3</gae.version>
-        <gae-test.version>1.4.2</gae-test.version>
-        <datanucleus.version>1.1.5</datanucleus.version>
+        <gae.version>1.5.0</gae.version>
+        <datanucleus.version>2.1.8</datanucleus.version>
         <gwt.version>2.3.0</gwt.version>
         <gwt.plugin.version>2.2.0</gwt.plugin.version>
         
@@ -277,7 +276,7 @@
             <dependency>
                 <groupId>com.google.appengine</groupId>
                 <artifactId>geronimo-jpa_3.0_spec</artifactId>
-                <version>1.1.1</version>
+                <version>1.1.2</version>
             </dependency>
             <dependency>
                 <groupId>com.google.appengine.orm</groupId>
