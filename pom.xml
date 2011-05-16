@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>name.pehl</groupId>
     <artifactId>superpom</artifactId>
-    <version>10</version>
+    <version>11</version>
     <packaging>pom</packaging>
     <name>SuperPom</name>
     <description>Common super POM for all my projects</description>
@@ -126,7 +126,7 @@
         <piriti.version>0.7.0b1</piriti.version>
         <taoki.version>0.3.0</taoki.version>
         <taputapu.version>0.1.0</taputapu.version>
-        <tire.version>0.1.0</tire.version>
+        <tire.version>0.2.0</tire.version>
         <totoe.version>0.2.3</totoe.version>
 
         <!-- GAE / GWT -->
