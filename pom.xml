@@ -276,7 +276,7 @@
             <dependency>
                 <groupId>com.google.appengine</groupId>
                 <artifactId>geronimo-jpa_3.0_spec</artifactId>
-                <version>1.1.2</version>
+                <version>1.1.1</version>
             </dependency>
             <dependency>
                 <groupId>com.google.appengine.orm</groupId>
