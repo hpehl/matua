@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>name.pehl</groupId>
     <artifactId>superpom</artifactId>
-    <version>9</version>
+    <version>10</version>
     <packaging>pom</packaging>
     <name>SuperPom</name>
     <description>Common super POM for all my projects</description>
@@ -131,7 +131,6 @@
 
         <!-- GAE / GWT -->
         <gae.version>1.5.0</gae.version>
-        <datanucleus.version>2.1.8</datanucleus.version>
         <gwt.version>2.3.0</gwt.version>
         <gwt.plugin.version>2.2.0</gwt.plugin.version>
         
@@ -155,7 +154,7 @@
         <guava.version>r09</guava.version>
         <objectify.version>3.0</objectify.version>
         <objectify.query.version>0.1</objectify.query.version>
-        <restlet.version>2.1-M3</restlet.version>
+        <restlet.version>2.1-M4</restlet.version>
         <commons.lang>3.0-SNAPSHOT</commons.lang>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -259,24 +258,11 @@
                 <groupId>com.google.appengine</groupId>
                 <artifactId>appengine-api-labs</artifactId>
                 <version>${gae.version}</version>
-                <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>com.google.appengine</groupId>
-                <artifactId>appengine-api-stubs</artifactId>
+                <artifactId>appengine-jsr107cache</artifactId>
                 <version>${gae.version}</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.google.appengine</groupId>
-                <artifactId>appengine-testing</artifactId>
-                <version>${gae.version}</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.google.appengine</groupId>
-                <artifactId>geronimo-jpa_3.0_spec</artifactId>
-                <version>1.1.1</version>
             </dependency>
             <dependency>
                 <groupId>com.google.appengine.orm</groupId>
@@ -286,43 +272,22 @@
             <dependency>
                 <groupId>org.datanucleus</groupId>
                 <artifactId>datanucleus-core</artifactId>
-                <version>${datanucleus.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>javax.transaction</groupId>
-                        <artifactId>transaction-api</artifactId>
-                    </exclusion>
-                </exclusions>
+                <version>1.1.5</version>
             </dependency>
             <dependency>
                 <groupId>org.datanucleus</groupId>
                 <artifactId>datanucleus-jpa</artifactId>
-                <version>${datanucleus.version}</version>
-                <scope>runtime</scope>
+                <version>1.1.5</version>
             </dependency>
             <dependency>
-                <groupId>javax.jdo</groupId>
-                <artifactId>jdo2-api</artifactId>
-                <version>2.3-eb</version>
-                <exclusions>
-                    <!-- exclude the legacy javax.transaction:transaction-api and replace it with javax.transaction:jta (it 
-                        appears to be the same thing) -->
-                    <exclusion>
-                        <groupId>javax.transaction</groupId>
-                        <artifactId>transaction-api</artifactId>
-                    </exclusion>
-                </exclusions>
+                <groupId>com.google.appengine</groupId>
+                <artifactId>geronimo-jpa_3.0_spec</artifactId>
+                <version>1.1.1</version>
             </dependency>
             <dependency>
-                <groupId>javax.transaction</groupId>
-                <artifactId>jta</artifactId>
-                <version>1.1</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.geronimo.specs</groupId>
-                <artifactId>geronimo-servlet_2.5_spec</artifactId>
-                <version>1.2</version>
-                <scope>provided</scope>
+                <groupId>com.google.appengine</groupId>
+                <artifactId>geronimo-jta_1.1_spec</artifactId>
+                <version>1.1.1</version>
             </dependency>
             <dependency>
                 <groupId>javax.servlet</groupId>
