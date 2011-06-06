@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>name.pehl</groupId>
     <artifactId>superpom</artifactId>
-    <version>11</version>
+    <version>12</version>
     <packaging>pom</packaging>
     <name>SuperPom</name>
     <description>Common super POM for all my projects</description>
@@ -103,10 +103,6 @@
             <id>restlet</id>
             <url>http://maven.restlet.org</url>
         </repository>
-        <repository>
-            <id>commons-lang</id>
-            <url>http://repository.apache.org/snapshots</url>
-        </repository>
     </repositories>
     <pluginRepositories>
         <pluginRepository>
@@ -127,7 +123,7 @@
         <taoki.version>0.3.0</taoki.version>
         <taputapu.version>0.1.0</taputapu.version>
         <tire.version>0.2.0</tire.version>
-        <totoe.version>0.2.3</totoe.version>
+        <totoe.version>0.2.4</totoe.version>
 
         <!-- GAE / GWT -->
         <gae.version>1.5.0</gae.version>
@@ -150,12 +146,11 @@
         <mockito.version>1.8.5</mockito.version>
 
         <!-- Misc -->
-        <gson.version>1.6</gson.version>
+        <gson.version>1.7.1</gson.version>
         <guava.version>r09</guava.version>
         <objectify.version>3.0</objectify.version>
         <objectify.query.version>0.1</objectify.query.version>
         <restlet.version>2.1-M4</restlet.version>
-        <commons.lang>3.0-SNAPSHOT</commons.lang>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
@@ -399,13 +394,6 @@
                 <scope>provided</scope>
             </dependency>
             
-            <!-- Commons -->
-            <dependency>
-                <groupId>org.apache.commons</groupId>
-                <artifactId>commons-lang3</artifactId>
-                <version>${commons.lang}</version>
-            </dependency>
-
             <!-- Restlet -->
             <dependency>
                 <groupId>org.restlet.gae</groupId>
