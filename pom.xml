@@ -131,7 +131,7 @@
         <gwt.plugin.version>2.2.0</gwt.plugin.version>
         
         <!-- GWT Frameworks -->
-        <gwtp.version>0.5.1</gwtp.version>
+        <gwtp.version>0.6</gwtp.version>
 
         <!-- DI -->
         <guice.version>3.0</guice.version>
