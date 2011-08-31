@@ -670,6 +670,72 @@ encoding/<project>=${project.build.sourceEncoding}
                     </dependency>
                 </dependencies>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <configuration>
+                    <reportPlugins>
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-project-info-reports-plugin</artifactId>
+                            <version>2.4</version>
+                            <reports>
+                                <report>dependencies</report>
+                                <report>index</report>
+                                <report>license</report>
+                                <report>project-team</report>
+                                <report>scm</report>
+                                <report>summary</report>
+                            </reports>
+                        </plugin>
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-jxr-plugin</artifactId>
+                            <version>2.2</version>
+                        </plugin>
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-javadoc-plugin</artifactId>
+                            <version>2.7</version>
+                            <configuration>
+                                <doctitle>${project.name} API ${project.version}</doctitle>
+                                <windowtitle>${project.name} API ${project.version}</windowtitle>
+                                <stylesheet>maven</stylesheet>
+                                <links>
+                                    <link>http://download.oracle.com/javase/6/docs/api/</link>
+                                    <link>http://google-web-toolkit.googlecode.com/svn/javadoc/2.0/</link>
+                                    <link>http://dev.sencha.com/deploy/gxtdocs/</link>
+                                    <link>http://google-guice.googlecode.com/svn/trunk/javadoc/</link>
+                                    <link>http://google-gin.googlecode.com/svn/trunk/javadoc/</link>
+                                    <link>http://objectify-appengine.googlecode.com/svn/trunk/javadoc/</link>
+                                    <link>http://www.restlet.org/documentation/2.0/gae/api/</link>
+                                    <link>http://www.restlet.org/documentation/2.0/gwt/api/</link>
+                                    <link>http://kaitiro.googlecode.com/svn/site/apidocs/</link>
+                                    <link>http://piriti.googlecode.com/svn/site/apidocs/</link>
+                                    <link>http://taoki.googlecode.com/svn/site/apidocs/</link>
+                                    <link>http://taputapu.googlecode.com/svn/site/apidocs/</link>
+                                    <link>http://tire-d8.googlecode.com/svn/site/apidocs/</link>
+                                    <link>http://totoe.googlecode.com/svn/site/apidocs/</link>
+                                </links>
+                            </configuration>
+                        </plugin>
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-surefire-report-plugin</artifactId>
+                            <version>2.6</version>
+                            <!-- the Maven Surefire Report plugin has a bug where it re-runs the tests, this is needed to avoid that 
+                                - http://jira.codehaus.org/browse/SUREFIRE-257 -->
+                            <reportSets>
+                                <reportSet>
+                                    <reports>
+                                        <report>report-only</report>
+                                    </reports>
+                                </reportSet>
+                            </reportSets>
+                        </plugin>
+                    </reportPlugins>
+                </configuration>
+            </plugin>
         </plugins>
 
 
@@ -681,74 +747,6 @@ encoding/<project>=${project.build.sourceEncoding}
             </extension>
         </extensions>
     </build>
-
-
-    <reporting>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-project-info-reports-plugin</artifactId>
-                <version>2.4</version>
-                <reportSets>
-                    <reportSet>
-                        <reports>
-                            <report>dependencies</report>
-                            <report>index</report>
-                            <report>license</report>
-                            <report>project-team</report>
-                            <report>scm</report>
-                            <report>summary</report>
-                        </reports>
-                    </reportSet>
-                </reportSets>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jxr-plugin</artifactId>
-                <version>2.2</version>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>2.7</version>
-                <configuration>
-                    <doctitle>${project.name} API ${project.version}</doctitle>
-                    <windowtitle>${project.name} API ${project.version}</windowtitle>
-                    <stylesheet>maven</stylesheet>
-                    <links>
-                        <link>http://download.oracle.com/javase/6/docs/api/</link>
-                        <link>http://google-web-toolkit.googlecode.com/svn/javadoc/2.0/</link>
-                        <link>http://dev.sencha.com/deploy/gxtdocs/</link>
-                        <link>http://google-guice.googlecode.com/svn/trunk/javadoc/</link>
-                        <link>http://google-gin.googlecode.com/svn/trunk/javadoc/</link>
-                        <link>http://objectify-appengine.googlecode.com/svn/trunk/javadoc/</link>
-                        <link>http://www.restlet.org/documentation/2.0/gae/api/</link>
-                        <link>http://www.restlet.org/documentation/2.0/gwt/api/</link>
-                        <link>http://kaitiro.googlecode.com/svn/site/apidocs/</link>
-                        <link>http://piriti.googlecode.com/svn/site/apidocs/</link>
-                        <link>http://taoki.googlecode.com/svn/site/apidocs/</link>
-                        <link>http://taputapu.googlecode.com/svn/site/apidocs/</link>
-                        <link>http://tire-d8.googlecode.com/svn/site/apidocs/</link>
-                        <link>http://totoe.googlecode.com/svn/site/apidocs/</link>
-                    </links>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-report-plugin</artifactId>
-                <version>2.6</version>
-                <!-- the Maven Surefire Report plugin has a bug where it re-runs the tests, this is needed to avoid that 
-                    - http://jira.codehaus.org/browse/SUREFIRE-257 -->
-                <reportSets>
-                    <reportSet>
-                        <reports>
-                            <report>report-only</report>
-                        </reports>
-                    </reportSet>
-                </reportSets>
-            </plugin>
-        </plugins>
-    </reporting>
 
 
     <profiles>
