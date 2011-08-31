@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>name.pehl</groupId>
     <artifactId>superpom</artifactId>
-    <version>16</version>
+    <version>17</version>
     <packaging>pom</packaging>
     <name>SuperPom</name>
     <description>Common super POM for all my projects</description>
@@ -126,7 +126,7 @@
         <totoe.version>0.2.4</totoe.version>
 
         <!-- GAE / GWT -->
-        <gae.version>1.5.0</gae.version>
+        <gae.version>1.5.2</gae.version>
         <gwt.version>2.4.0-rc1</gwt.version>
         <gwt.plugin.version>2.3.0-1</gwt.plugin.version>
         
