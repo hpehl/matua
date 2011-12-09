@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>name.pehl</groupId>
     <artifactId>superpom</artifactId>
-    <version>17</version>
+    <version>18</version>
     <packaging>pom</packaging>
     <name>SuperPom</name>
     <description>Common super POM for all my projects</description>
@@ -127,8 +127,8 @@
 
         <!-- GAE / GWT -->
         <gae.version>1.5.2</gae.version>
-        <gwt.version>2.4.0-rc1</gwt.version>
-        <gwt.plugin.version>2.3.0-1</gwt.plugin.version>
+        <gwt.version>2.4.0</gwt.version>
+        <gwt.plugin.version>2.4.0</gwt.plugin.version>
         
         <!-- GWT Frameworks -->
         <gwtp.version>0.6</gwtp.version>
@@ -138,19 +138,19 @@
         <gin.version>1.5.0</gin.version>
 
         <!-- Logging -->
-        <slf4j.version>1.6.1</slf4j.version>
-        <logback.version>0.9.22</logback.version>
+        <slf4j.version>1.6.4</slf4j.version>
+        <logback.version>1.0.0</logback.version>
 
         <!-- Test -->
-        <junit.version>4.8.2</junit.version>
-        <mockito.version>1.8.5</mockito.version>
+        <junit.version>4.10</junit.version>
+        <mockito.version>1.9.0-rc1</mockito.version>
 
         <!-- Misc -->
-        <gson.version>1.7.1</gson.version>
-        <guava.version>r09</guava.version>
-        <objectify.version>3.0</objectify.version>
+        <gson.version>2.0</gson.version>
+        <guava.version>10.0.1</guava.version>
+        <objectify.version>3.1</objectify.version>
         <objectify.query.version>0.1</objectify.query.version>
-        <restlet.version>2.1-M4</restlet.version>
+        <restlet.version>2.1-RC1</restlet.version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
