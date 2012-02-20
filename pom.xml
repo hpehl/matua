@@ -46,6 +46,12 @@
         <developerConnection>scm:svn:https://pehl-parent.googlecode.com/svn/trunk/</developerConnection>
         <url>http://pehl-parent.googlecode.com/svn/trunk/</url>
     </scm>
+    <distributionManagement>
+        <site>
+            <id>s3.site</id>
+            <url>s3://pehl.mvnsite/superpom</url>
+        </site>
+    </distributionManagement>
 
 
     <build>
