@@ -16,7 +16,7 @@
     <packaging>pom</packaging>
     <name>SuperPom</name>
     <description>Common super POM for all my projects</description>
-    <url>http://code.google.com/p/piriti/</url>
+    <url>http://code.google.com/p/pehl-parent/</url>
     <organization>
         <name>Harald Pehl</name>
         <url>http://haraldpehl.blogspot.com/</url>
