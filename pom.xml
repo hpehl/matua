@@ -6,8 +6,6 @@
             - Mockito 1.9.5-rc1
         o UTF-8 as (re)source encoding
         o Version numbers for the most common maven plugins (see below)
-        
-        $LastChangedBy: harald.pehl $LastChangedRevision: 1418 $
     -->
 
 
