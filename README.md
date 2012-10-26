@@ -1,4 +1,4 @@
 matua
 =====
 
-Contains the parent POM for my projects
+Parent POM for my projects
