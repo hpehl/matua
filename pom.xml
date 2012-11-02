@@ -3,7 +3,7 @@
     Super POM used for all my projects. This pom defines the following items (please overwrite if necessary)
         o Dependencies for 
             - Junit 4.10
-            - Mockito 1.9.5-rc1
+            - Mockito 1.9.5
         o UTF-8 as (re)source encoding
         o Version numbers for the most common maven plugins (see below)
     -->
@@ -19,11 +19,11 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>name.pehl</groupId>
     <artifactId>superpom</artifactId>
-    <version>20</version>
+    <version>21</version>
     <packaging>pom</packaging>
     <name>SuperPom</name>
     <description>Common super POM for all my projects</description>
-    <url>http://code.google.com/p/pehl-parent/</url>
+    <url>https://github.com/hpehl/matua/</url>
     <organization>
         <name>Harald Pehl</name>
         <url>http://haraldpehl.blogspot.com/</url>
@@ -40,7 +40,7 @@
         <developer>
             <id>harald.pehl</id>
             <name>Harald Pehl</name>
-            <email>harald.pehl@googlemail.com</email>
+            <email>harald.pehl@gmail.com</email>
             <roles>
                 <role>architect</role>
                 <role>developer</role>
@@ -49,9 +49,9 @@
         </developer>
     </developers>
     <scm>
-        <connection>scm:svn:http://pehl-parent.googlecode.com/svn/trunk/</connection>
-        <developerConnection>scm:svn:https://pehl-parent.googlecode.com/svn/trunk/</developerConnection>
-        <url>http://pehl-parent.googlecode.com/svn/trunk/</url>
+        <connection>scm:git:git@github.com:hpehl/matua.git</connection>
+        <url>scm:git:git@github.com:hpehl/matua.git</url>
+        <developerConnection>scm:git:git@github.com:hpehl/matua.git</developerConnection>
     </scm>
     <distributionManagement>
         <site>
@@ -63,7 +63,7 @@
     
     <properties>
         <junit.version>4.10</junit.version>
-        <mockito.version>1.9.5-rc1</mockito.version>
+        <mockito.version>1.9.5</mockito.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -110,17 +110,12 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-dependency-plugin</artifactId>
-                    <version>2.5</version>
+                    <version>2.5.1</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-deploy-plugin</artifactId>
                     <version>2.7</version>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-eclipse-plugin</artifactId>
-                    <version>2.9</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -135,7 +130,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-javadoc-plugin</artifactId>
-                    <version>2.8.1</version>
+                    <version>2.9</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -145,7 +140,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-project-info-reports-plugin</artifactId>
-                    <version>2.5</version>
+                    <version>2.6</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -160,17 +155,17 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-site-plugin</artifactId>
-                    <version>3.1</version>
+                    <version>3.2</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-source-plugin</artifactId>
-                    <version>2.2</version>
+                    <version>2.2.1</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
-                    <version>2.12.2</version>
+                    <version>2.12.4</version>
                 </plugin>
             </plugins>
         </pluginManagement>
