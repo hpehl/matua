@@ -292,7 +292,6 @@
             </plugins>
         </pluginManagement>
 
-
         <plugins>
             <!-- Set properties containing the scm revision and build timestamp -->
             <plugin>
